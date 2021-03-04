@@ -1,54 +1,53 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <title>Bootstrap 5 Carousel</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" type="text/css" href="bootstrap.min.css">
-  <link rel="stylesheet" type="text/css" href="styleE.css">
-</head>
-<body>
-
- <section class="home">
-  <div id="carousel" class="carousel slide" data-ride="carousel">
-  <div class="carousel-controls">
-    <ol class="carousel-indicators">
-      <li data-target="#carousel" data-slide-to="0" class="active" style="background-image:url('img/slide-1.jpg')"></li>
-      <li data-target="#carousel" data-slide-to="1" style="background-image:url('img/slide-2.jpg')"></li>
-      <li data-target="#carousel" data-slide-to="2" style="background-image:url('img/slide-3.jpg')"></li>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700">
+        <link rel="stylesheet" href="styleE.css">
+        <link
+        rel="stylesheet"
+        href="https://use.fontawesome.com/releases/v5.14.0/css/all.css"
+        integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc"
+        crossorigin="anonymous"
+     />
       
-    </ol>
-    <a class="carousel-control-prev" href="#carousel" role="button" data-slide="prev">
-     <img src="img/left-arrow.svg" alt="Prev"> 
-  </a>
-  <a class="carousel-control-next" href="#carousel" role="button" data-slide="next">
-    <img src="img/right-arrow.svg" alt="Next">
-  </a>
-  </div>
-  <div class="carousel-inner">
-    <div class="carousel-item active" style="background-image:url('img/slide-1.jpg')">
-      <div class="container">
-         <h2>I'm Rose</h2>
-         <p>Web Developer</p>
-      </div>
-    </div>
-    <div class="carousel-item" style="background-image:url('img/slide-2.jpg')">
-      <div class="container">
-         <h2>I'm Jasmine</h2>
-         <p>Web Developer</p>
-      </div>
-    </div>
-    <div class="carousel-item" style="background-image:url('img/slide-3.jpg')">
-      <div class="container">
-         <h2>I'm Ruby</h2>
-         <p>Web Developer</p>
-      </div>
-    </div>
-  </div>
-</div>
- </section>
 
- 
-<script src="bootstrap.bundle.min.js"></script>
+      </head>
+<body>
+    <!--Navbar Section -->
+    <nav class ="navbar">
+        <div class = "navbar_container">
+            <a href=index.html id="navbar_logo">CULESNATION</a>
+            <div class = "navbar_toggle" id="mobile_menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="navbar_menu">
+                <li class="navbar_item">
+                    <a href="index.html" class="navbar_links" id="home-page">Home</a>
+                </li>
+                <li class="navbar_item">
+                    <a a href="matchlinks.html"  class="navbar_links" id="matchlinks-page">Match links</a>
+                <li class= "navbar_item">
+                    <a href="community.html" class="navbar_links" id="community-page">Community</a>
+                </li>
+                <li class="navbar_item">
+                    <a href=event.html class="navbar_links" id="events-page">Events</a>
+                </li>
+                <li class="navbar_btn">
+                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSfwjl1kZ-6oQbIGmcUzX-6AIfmEL4LMisENqTiPBl8es-rnEA/viewform" class="button" id="sign-up">Sign Up</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class= "coming_soon">
+        <i class="far fa-lightbulb fa-5x"></i>
+    </div>
+    <div class = "heading">
+        <h1 class= "heading_tag"> Currently there are no active events, Stay tuned for further updates!</h1>
+    </div>
 </body>
+<script src="app.js"></script>
 </html>
